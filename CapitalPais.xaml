@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrivialEuropeo.CapitalPais"
+             Title="Adivina el país">
+    
+    <Grid>
+        <Image
+                Source="ue.jpg"
+                Aspect="AspectFill"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"/>
+
+        <VerticalStackLayout Padding="30,0" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label 
+                x:Name="PreguntaCapital"
+                Text="¿De qué país es?"
+                Style="{StaticResource Key=PersonalizacionEtiqueta}"/>
+
+            <!--Botones para las respuestas-->
+            <Button
+                x:Name="Btn1"
+                Text="Botón 1" 
+                Clicked="PaisBtn"
+                Style="{StaticResource Key=PersonalizacionBoton}"/>
+            
+            <Button
+                x:Name="Btn2"
+                Text="Botón 2" 
+                Clicked="PaisBtn"
+                Style="{StaticResource Key=PersonalizacionBoton}"/>
+
+            <Button
+                x:Name="Btn3"
+                Text="Botón 3" 
+                Clicked="PaisBtn"
+                Style="{StaticResource Key=PersonalizacionBoton}"/>
+                
+            <Button
+                x:Name="Btn4"
+                Text="Botón 4" 
+                Clicked="PaisBtn"
+                Style="{StaticResource Key=PersonalizacionBoton}"/>
+
+            <!--Otros botones-->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" Margin="5, 5, 5, 5">
+
+                <Button
+                x:Name="Next"
+                Text="Siguiente" 
+                Clicked="NextBtn"
+                Style="{StaticResource Key=BotonesNextResetPersonalizado}"/>
+
+                <Button
+                x:Name="Reset"
+                Text="Reiniciar" 
+                Clicked="ResetBtn"
+                Style="{StaticResource Key=BotonesNextResetPersonalizado}"/>
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

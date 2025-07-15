@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrivialEuropeo.PaisCapital"
+             Title="Adivina la capital">
+
+    <Grid>
+        <Image
+            Source="ue3.jpeg"
+            Aspect="AspectFill"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"/>
+
+        <VerticalStackLayout Padding="30,0" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label 
+            x:Name="PreguntaPais"
+            Text="¿Cuál es la capital de?"
+            Style="{StaticResource Key=PersonalizacionEtiqueta}"/>
+
+            <!--Botones para las respuestas-->
+            <Button
+            x:Name="Button1"
+            Text="Botón 1" 
+            Clicked="CapitalBtn"
+            Style="{StaticResource Key=PersonalizacionBoton}"/>
+
+            <Button
+            x:Name="Button2"
+            Text="Botón 2" 
+            Clicked="CapitalBtn"
+            Style="{StaticResource Key=PersonalizacionBoton}"/>
+
+            <Button
+            x:Name="Button3"
+            Text="Botón 3" 
+            Clicked="CapitalBtn"
+            Style="{StaticResource Key=PersonalizacionBoton}"/>
+
+            <Button
+            x:Name="Button4"
+            Text="Botón 4" 
+            Clicked="CapitalBtn"
+            Style="{StaticResource Key=PersonalizacionBoton}"/>
+
+            <!--Otros botones-->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" Margin="5, 5, 5, 5">
+
+            <Button
+            x:Name="Siguiente"
+            Text="Siguiente" 
+            Clicked="SiguienteBtn"
+            Style="{StaticResource Key=BotonesNextResetPersonalizado}"/>
+
+            <Button
+            x:Name="Reiniciar"
+            Text="Reiniciar" 
+            Clicked="ReiniciarBtn"
+            Style="{StaticResource Key=BotonesNextResetPersonalizado}"/>
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

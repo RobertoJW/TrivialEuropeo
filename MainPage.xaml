@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrivialEuropeo.MainPage">
+    <Grid>
+        <Image
+                Source="ue2.png"
+                Aspect="AspectFill"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"/>
+
+        <VerticalStackLayout Padding="30,0" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label
+                Text="Elija una opción de juego"
+                Style="{StaticResource Key=PersonalizacionEtiqueta}"/>
+            <Button
+                x:Name="PaisCapitalBtn"
+                Text="Adivinar capital de los países." 
+                Clicked="PageCountryCapital"
+                Style="{StaticResource Key=PersonalizacionBoton}"/>
+
+            <Button
+                x:Name="CapitalPaisBtn"
+                Text="Adivinar país con capital." 
+                Clicked="PageCapitalCountry"
+                Style="{StaticResource Key=PersonalizacionBoton}"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
